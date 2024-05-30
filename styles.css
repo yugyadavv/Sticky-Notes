@@ -1,0 +1,136 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d0dae8;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.controls-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #d0dae8;
+    padding: 20px;
+}
+
+textarea#noteText {
+    width: 75%;
+    height: 150px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 0px #803636;
+    
+}
+
+input#noteColor {
+    appearance: auto;
+    inline-size: 50px;
+    block-size: 27px;
+    cursor: default;
+    box-sizing: border-box;
+    border-width: 1px;
+    margin: 20px;
+    padding: 1px 2px;
+}
+
+button#addNoteButton {
+    width: 160px;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 16px;
+    height: 55px;
+    text-align: center;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+    transition: all .4s ease-in-out;
+
+}
+
+button#addNoteButton:hover {
+    background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+   
+}
+
+.notes-section {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20PX;
+    background-color: white;
+    align-items: start;
+    justify-content: start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+.notes-section h2 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+#notesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20PX;
+    align-items: start;
+    justify-content: start;
+
+}
+
+.note {
+    width: fit-content;
+    min-width: 200px;
+    height: 150px;
+    position: relative;
+    padding: 17px 17px 3px 3px;
+}
+
+.note textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ff0000;
+}
